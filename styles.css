@@ -11,25 +11,6 @@
     margin: 0 auto; /* Center the carousel */
 }
 
-/* Ensure all images have a consistent, smaller height */
-.carousel-item img {
-    width: 100%; /* Full width */
-    height: 300px; /* Reduced height */
-    object-fit: fill; /* Maintain aspect ratio without distortion */
-}
-
-/* Adjust for smaller screens */
-@media (max-width: 768px) { 
-    .carousel-item img {
-        height: 250px; /* Reduce height further for tablets */
-    }
-}
-
-@media (max-width: 480px) { 
-    .carousel-item img {
-        height: 200px; /* Further reduce for mobile */
-    }
-}
 
 
 
