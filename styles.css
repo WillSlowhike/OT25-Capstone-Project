@@ -7,7 +7,7 @@
 /* Carousel Image Sizing */
 /* Set a max-width to prevent it from being too large */
 .carousel {
-    max-width: 900px; /* Adjust width as needed */
+    max-width: 500px; /* Adjust width as needed */
     margin: 0 auto; /* Center the carousel */
 }
 
