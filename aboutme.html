@@ -23,6 +23,60 @@
     .navbar-custom .search-bar {
       max-width: 300px; /* Limit search bar width */
     }
+
+    /* Custom About Me Styling */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .skills-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .skills-list li {
+      background-color: #f8f9fa;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      margin-top: 30px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: #3498db;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -28px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #3498db;
+      border: 2px solid white;
+    }
+    .timeline-item h5 {
+      margin-bottom: 5px;
+    }
+    .timeline-item p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -57,9 +111,9 @@
             <!-- Add .dropdown-menu-end to align the dropdown to the right -->
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="aboutme.html">About</a></li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Example</a></li>
+              <li><a class="dropdown-item" href="Article 1.html">Article 1</a></li>
             </ul>
           </li>
         </ul>
@@ -69,9 +123,31 @@
 
   <!-- Main Content -->
   <div class="container mt-5">
-    <h1>About Me</h1>
-    <p>This is the about me page.</p>
-  </div>
+    <h1 class="text-center mb-4">About Me</h1>
+
+    <!-- Profile Section -->
+    <div class="text-center">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+      <h2>John Doe</h2>
+      <p class="lead">Web Developer & Designer</p>
+      <p>Hi, I'm John! I specialize in creating beautiful and functional websites. With over 5 months of experience, I love turning ideas into reality through code and design.</p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="mt-5">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>HTML, CSS, JavaScript</li>
+        <li>bootstrap</li>
+        <li>C#, p5.js</li>
+        <li>Unity</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> My Project. All rights reserved.</p>
+  </footer>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
