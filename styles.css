@@ -1,0 +1,23 @@
+/* Carousel Control Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  width: 40px; /* Button width */
+  height: 40px; /* Button height */
+  border-radius: 50%; /* Make buttons circular */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.carousel-control-prev {
+  left: 15px; /* Position the previous button */
+}
+
+.carousel-control-next {
+  right: 15px; /* Position the next button */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Make the arrow icons white */
+}
