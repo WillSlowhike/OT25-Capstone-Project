@@ -42,10 +42,11 @@
       height: 400px; /* Set a fixed height for the carousel items */
     }
     .carousel-item img {
-      width: 100%; /* Ensure images take up full width */
-      height: 100%; /* Ensure images take up full height */
-      object-fit: contain; /* Scale images to cover the space without distortion */
-    }
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Changed from 'contain' to prevent white space */
+  object-position: center;
+}
   </style>
 </head>
 <body>

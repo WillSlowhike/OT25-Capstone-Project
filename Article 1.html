@@ -68,14 +68,30 @@
   </nav>
 
   <!-- Main Content -->
-  <div class="container mt-5">
-    <h1>Article 1</h1>
-    <p>This is the content for Article 1.</p>
-  </div>
-
-  <footer>
-    <p>&copy; <span id="footer-year"></span> My Project. All rights reserved.</p>
-  </footer>
+  <main id="main-content" class="container mt-5">
+    <article class="article-content">
+      <header class="mb-4">
+        <h1>Article Title</h1>
+        <p class="text-muted">Published on <time datetime="2025-05-29">May 29, 2025</time></p>
+      </header>
+      
+      <div class="article-body">
+        <p class="lead">Introduction paragraph summarizing the article...</p>
+        
+        <h2>First Section</h2>
+        <p>Detailed content...</p>
+        
+        <img src="path/to/image.jpg" alt="Descriptive alt text" class="img-fluid rounded mb-3">
+        
+        <h3>Subsection</h3>
+        <p>More detailed information...</p>
+      </div>
+      
+      <footer class="mt-4 pt-3 border-top">
+        <a href="index.html" class="btn btn-outline-secondary">Back to Home</a>
+      </footer>
+    </article>
+  </main>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
