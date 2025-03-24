@@ -5,8 +5,8 @@ const quizData = [
       type: "single",
       answers: [
         { text: "Increased Focus", correct: false },
-        { text: "Addiction", correct: false },
-        { text: "Improved Sleep", correct: true },
+        { text: "Addiction", correct: true },
+        { text: "Improved Sleep", correct: false },
         { text: "Worsened Academic Performance", correct: false }
       ]
     },
@@ -25,30 +25,60 @@ const quizData = [
       type: "single",
       answers: [
         { text: "a) Increased social interactions with peers", correct: false },
-        { text: "False", correct: true }
+        { text: "b) Enhanced communication skills", correct: false },
+        { text: "c) Social isolation and poor communication skills", correct: true },
+        { text: "d) Better relationships with family", correct: false },
       ]
     },
     {
-     question: "Which part of the brain is most affected by prolonged gaming?",
+     question: "4. What effect can violent video games have on teens?",
         type: "single",
         answers: [
-          { text: "Gray Matter", correct: false },
-          { text: "Brainstem", correct: false },
-          { text: "Cerebellum", correct: false },
-          { text: "Corpus callosum", correct: true }
+          { text: "a) They may improve their conflict resolution skills", correct: false },
+          { text: "b) They may lead to desensitization to aggression and increase violent behavior", correct: true },
+          { text: "c) They have no impact on behavior", correct: false },
+          { text: "d) They reduce aggression and promote peace", correct: false }
         ]   
     },
     {
-    question: "What is one strategy used in CBT to reduce gaming addiction?",
+    question: "5. How does excessive gaming affect physical health?",
         type: "single",
         answers: [
-          { text: "Avoiding the triggers", correct: true },
-          { text: "Playing more games", correct: false },
-          { text: "Playing with friends", correct: false },
-          { text: "Playing games with a higher difficulty", correct: false }
+          { text: "a) It improves posture and vision", correct: false },
+          { text: "b) It promotes physical fitness", correct: false },
+          { text: "c) It can lead to poor posture, eye strain, and weight gain", correct: true },
+          { text: "d) It increases physical endurance", correct: false }
         ]
     },
     {
+    question: "6. What is one way parents can help teens develop healthier gaming habits?",
+        type: "single",
+        answers: [
+          { text: "a) Encourage unlimited gaming time", correct: false },
+          { text: "b) Monitor the content of games and set time limits", correct: true },
+          { text: "c) Discourage any form of social interaction", correct: false },
+          { text: "d) Allow unrestricted access to all games", correct: false }
+        ]
+    },
+    {
+    question: "7. What is a key benefit of establishing a balanced approach to gaming?",
+        type: "single",
+        answers: [
+          { text: "a) It can increase gaming skills", correct: false },
+          { text: "b) It helps teens maintain their mental and physical well-being", correct: true },
+          { text: "c) It improves gaming performance", correct: false },
+          { text: "d) It eliminates all health risks related to gaming", correct: false }
+        ]
+    },
+    {
+    question: "8. Which of the following is a potential cognitive benefit of playing video games in moderation?",
+        type: "single",
+        answers: [
+          { text: "a) Better grades in school", correct: false },
+          { text: "b) Improved cognitive skills and hand-eye coordination", correct: true },
+          { text: "c) Reduced stress", correct: false },
+          { text: "d) Increased emotional intelligence", correct: false }
+        ]
     }
   ];
   
