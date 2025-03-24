@@ -1,54 +1,32 @@
 // Quiz Data
 const quizData = [
     {
-      question: "1. What is one major mental health concern associated with excessive video game use in teens?",
+      question: "What is the capital of France?",
       type: "single",
       answers: [
-        { text: "Increased Focus", correct: false },
-        { text: "Addiction", correct: false },
-        { text: "Improved Sleep", correct: true },
-        { text: "Worsened Academic Performance", correct: false }
+        { text: "London", correct: false },
+        { text: "Paris", correct: true },
+        { text: "Berlin", correct: false },
+        { text: "Madrid", correct: false }
       ]
     },
     {
-      question: "2. How can excessive gaming negatively affect academic performance?",
-      type: "single",
+      question: "Which of these are programming languages? (Select all that apply)",
+      type: "multiple",
       answers: [
-        { text: "It can increase motivation for schoolwork", correct: false },
-        { text: "It can interfere with sleep and focus", correct: true },
-        { text: "It helps improve cognitive skills for studying", correct: false },
-        { text: "It makes homework easier", correct: false }
+        { text: "JavaScript", correct: true },
+        { text: "HTML", correct: false },
+        { text: "CSS", correct: false },
+        { text: "Python", correct: true }
       ]
     },
     {
-      question: "3. Which of the following is a potential social consequence of excessive video game use?",
+      question: "The Earth is flat.",
       type: "single",
       answers: [
-        { text: "a) Increased social interactions with peers", correct: false },
+        { text: "True", correct: false },
         { text: "False", correct: true }
       ]
-    },
-    {
-     question: "Which part of the brain is most affected by prolonged gaming?",
-        type: "single",
-        answers: [
-          { text: "Gray Matter", correct: false },
-          { text: "Brainstem", correct: false },
-          { text: "Cerebellum", correct: false },
-          { text: "Corpus callosum", correct: true }
-        ]   
-    },
-    {
-    question: "What is one strategy used in CBT to reduce gaming addiction?",
-        type: "single",
-        answers: [
-          { text: "Avoiding the triggers", correct: true },
-          { text: "Playing more games", correct: false },
-          { text: "Playing with friends", correct: false },
-          { text: "Playing games with a higher difficulty", correct: false }
-        ]
-    },
-    {
     }
   ];
   
