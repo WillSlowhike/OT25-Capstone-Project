@@ -1,7 +1,7 @@
 // Quiz Data
 const quizData = [
     {
-      question: "1. What is one major mental health concern associated with excessive video game use in teens?",
+      question: "What is one major mental health concern associated with excessive video game use in teens?",
       type: "single",
       answers: [
         { text: "Increased Focus", correct: false },
@@ -11,7 +11,7 @@ const quizData = [
       ]
     },
     {
-      question: "2. How can excessive gaming negatively affect academic performance?",
+      question: "How can excessive gaming negatively affect academic performance?",
       type: "single",
       answers: [
         { text: "It can increase motivation for schoolwork", correct: false },
@@ -21,7 +21,7 @@ const quizData = [
       ]
     },
     {
-      question: "3. Which of the following is a potential social consequence of excessive video game use?",
+      question: "Which of the following is a potential social consequence of excessive video game use?",
       type: "single",
       answers: [
         { text: "a) Increased social interactions with peers", correct: false },
@@ -31,7 +31,7 @@ const quizData = [
       ]
     },
     {
-     question: "4. What effect can violent video games have on teens?",
+     question: "What effect can violent video games have on teens?",
         type: "single",
         answers: [
           { text: "a) They may improve their conflict resolution skills", correct: false },
@@ -41,7 +41,7 @@ const quizData = [
         ]   
     },
     {
-    question: "5. How does excessive gaming affect physical health?",
+    question: "How does excessive gaming affect physical health?",
         type: "single",
         answers: [
           { text: "a) It improves posture and vision", correct: false },
@@ -51,7 +51,7 @@ const quizData = [
         ]
     },
     {
-    question: "6. What is one way parents can help teens develop healthier gaming habits?",
+    question: "What is one way parents can help teens develop healthier gaming habits?",
         type: "single",
         answers: [
           { text: "a) Encourage unlimited gaming time", correct: false },
@@ -61,7 +61,7 @@ const quizData = [
         ]
     },
     {
-    question: "7. What is a key benefit of establishing a balanced approach to gaming?",
+    question: "What is a key benefit of establishing a balanced approach to gaming?",
         type: "single",
         answers: [
           { text: "a) It can increase gaming skills", correct: false },
@@ -71,7 +71,7 @@ const quizData = [
         ]
     },
     {
-    question: "8. Which of the following is a potential cognitive benefit of playing video games in moderation?",
+    question: "Which of the following is a potential cognitive benefit of playing video games in moderation?",
         type: "single",
         answers: [
           { text: "a) Better grades in school", correct: false },
@@ -109,36 +109,36 @@ const quizData = [
     updateProgress();
   }
   
-  // Render Current Question
-  function renderQuestion() {
-    quizForm.innerHTML = '';
-    const question = quizData[currentQuestion];
-    
-    const questionDiv = document.createElement('div');
-    questionDiv.className = `question ${currentQuestion === 0 ? 'active' : ''}`;
-    
-    const questionHTML = `
-      <h2>${currentQuestion + 1}. ${question.question}</h2>
-      <div class="answers">
-        ${question.answers.map((answer, index) => `
-          <div class="answer-option">
-            <label>
-              <input 
-                type="${question.type === 'single' ? 'radio' : 'checkbox'}" 
-                name="answer" 
-                value="${index}"
-                ${userAnswers[currentQuestion]?.includes(index) ? 'checked' : ''}
-              >
-              ${answer.text}
-            </label>
-          </div>
-        `).join('')}
-      </div>
-    `;
-    
-    questionDiv.innerHTML = questionHTML;
-    quizForm.appendChild(questionDiv);
-  }
+// Updated renderQuestion function
+function renderQuestion() {
+  quizForm.innerHTML = '';
+  const question = quizData[currentQuestion];
+  
+  const questionDiv = document.createElement('div');
+  questionDiv.className = 'question active'; // Always set to active when rendering
+  
+  const questionHTML = `
+    <h2>${currentQuestion + 1}. ${question.question}</h2>
+    <div class="answers">
+      ${question.answers.map((answer, index) => `
+        <div class="answer-option">
+          <label>
+            <input 
+              type="${question.type === 'single' ? 'radio' : 'checkbox'}" 
+              name="answer" 
+              value="${index}"
+              ${userAnswers[currentQuestion]?.includes(index) ? 'checked' : ''}
+            >
+            ${answer.text}
+          </label>
+        </div>
+      `).join('')}
+    </div>
+  `;
+  
+  questionDiv.innerHTML = questionHTML;
+  quizForm.appendChild(questionDiv);
+}
   
   // Update Navigation Buttons
   function updateButtons() {
@@ -236,13 +236,15 @@ const quizData = [
     updateProgress();
   });
   
-  nextBtn.addEventListener('click', () => {
-    saveAnswer();
-    currentQuestion++;
-    renderQuestion();
-    updateButtons();
-    updateProgress();
-  });
+nextBtn.addEventListener('click', () => {
+  console.log('Current question before:', currentQuestion);
+  saveAnswer();
+  currentQuestion++;
+  console.log('Current question after:', currentQuestion);
+  renderQuestion();
+  updateButtons();
+  updateProgress();
+});
   
   submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
