@@ -43,30 +43,35 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">My Project</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html"> Example Navbar Title <Title></Title></a>
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Search Bar -->
         <form class="d-flex ms-auto search-bar">
-          <input class="form-control me-2" type="search" placeholder="Search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
+        <!-- Dropdown Menu -->
         <ul class="navbar-nav ms-3">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
             <!-- Add .dropdown-menu-end to align the dropdown to the right -->
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="aboutme.html">About</a></li>
-                <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
-                <li><a class="dropdown-item" href="Source.html">Sources</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="CAPrivacy Policy.html">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="aboutme.html">About</a></li>
+              <li><a class="dropdown-item" href="Contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="Source.html">Sources</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="CAPrivacy Policy.html">Privacy Policy</a></li>
             </ul>
           </li>
         </ul>
