@@ -85,11 +85,27 @@ body {
   margin-right: 10px;
 }
 
-/* Button Styles */
+/* Add to your existing styles.css */
 .quiz-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  gap: 10px; /* Adds spacing between buttons */
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.btn-outline-dark {
+  margin-left: auto; /* Pushes it to the right */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .quiz-footer {
+    flex-direction: column;
+  }
+  .btn-outline-dark {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 /* Results Modal */
