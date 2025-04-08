@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Sources | My Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .source-category {
+      background-color: #f8f9fa;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      margin-bottom: 25px;
+    }
+    .source-item {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .source-item:last-child {
+      border-bottom: none;
+    }
+    .doi-badge {
+      background-color: #e9ecef;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="../index.html"> Informational Tab <Title></Title></a>
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Search Bar -->
+        <form class="d-flex ms-auto search-bar">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+        <!-- Dropdown Menu -->
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <!-- Add .dropdown-menu-end to align the dropdown to the right -->
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../index.html">Home</a></li>  
+              <li><a class="dropdown-item" href="NavbarLinks/aboutme.html">About</a></li>
+              <li><a class="dropdown-item" href="NavbarLinks/Contact.html">Contact</a></li>
+              <li><a class="dropdown-item" href="Sources/Source.html">Sources</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="presentation.html">Notes</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Research Sources</h1>
+    
+    <!-- Articles Section -->
+    <div class="source-category">
+      <h2><i class="fas fa-newspaper me-2"></i>Journalistic Articles</h2>
+      
+      <div class="source-item">
+        <h3>Effects Of Video Games On Teen Mental Health</h3>
+        <p class="mb-1">Sullivan, S. (2024, April 8). Effects of video games on Teen Mental Health. <em>Bright Path Adolescent Mental Health</em>.</p>
+        <a href="https://www.brightpathbh.com/effects-of-video-games-on-teen-mental-health/" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="btn btn-primary btn-sm">
+          View Article  
+        </a>
+        <p class="mt-2 text-muted">Published: August 23, 2023</p>
+      </div>
+
+        <div class="source-item">
+            <h3>Example Title</h3>
+            <p class="mb-1">Smith, J. (2023, December 15). Video games and their impact on mental health. <em>Publisher/Company</em>.</p>
+            <a href="https://www.psychologytoday.com/us/blog/mental-health-nerd/202312/video-games-and-their-impact-mental-health" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="btn btn-primary btn-sm">
+            View Article  
+            </a>
+            <p class="mt-2 text-muted">Published: December 15, 2023</p>
+    </div>
+    </div>
+    
+    <!-- Institutional Reports -->
+    <div class="source-category">
+      <h2><i class="fas fa-university me-2"></i>Helpful Institutional Reports </h2>
+      
+      <div class="source-item">
+        <h3>WHO Gaming Disorder Classification</h3>
+        <p class="mb-1">World Health Organization. (2018). ICD-11: Gaming disorder.</p>
+        <a href="https://www.who.int/standards/classifications/frequently-asked-questions/gaming-disorder" 
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-success btn-sm">
+          Read Official Report
+        </a>
+      </div>
+    </div>
+
+    <!-- Add more categories as needed -->
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  
+</body>
+</html>
