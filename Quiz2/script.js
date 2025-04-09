@@ -82,6 +82,92 @@ const quizData = [
   }
 ];
 
+const additionalQuizData = [
+  {
+    question: "What is the primary focus of Cognitive Behavioral Therapy (CBT)?",
+    type: "single",
+    answers: [
+      { text: "Identifying and changing negative thought patterns and behaviors", correct: true },
+      { text: "Medication management", correct: false },
+      { text: "Exploring past trauma", correct: false },
+      { text: "Relaxation techniques", correct: false }
+    ]
+  },
+  {
+    question: "What is one of the most common psychological conditions treated by CBT?",
+    type: "single",
+    answers: [
+      { text: "Anxiety disorders", correct: true },
+      { text: "Heart disease", correct: false },
+      { text: "Chronic pain", correct: false },
+      { text: "Diabetes", correct: false }
+    ]
+  },
+  {
+    question: "According to the article, CBT has been shown to be effective in treating which of the following?",
+    type: "single",
+    answers: [
+      { text: "Bulimia", correct: true },
+      { text: "Chronic fatigue", correct: false },
+      { text: "Insomnia", correct: false },
+      { text: "Autism", correct: false }
+    ]
+  },
+  {
+    question: "How does CBT help with anger and stress management?",
+    type: "single",
+    answers: [
+      { text: "By offering strategies to regulate emotional responses and foster healthier coping mechanisms", correct: true },
+      { text: "By teaching deep breathing exercises only", correct: false },
+      { text: "By encouraging the individual to avoid stressful situations", correct: false },
+      { text: "By focusing solely on relaxation techniques", correct: false }
+    ]
+  },
+  {
+    question: "According to the article, how does CBT compare to other treatments?",
+    type: "single",
+    answers: [
+      { text: "It produces better outcomes in several conditions", correct: true },
+      { text: "It has lower response rates", correct: false },
+      { text: "It is equally effective in all conditions", correct: false },
+      { text: "It is less popular among therapists", correct: false }
+    ]
+  },
+  {
+    question: "What is one area that requires further research in CBT?",
+    type: "single",
+    answers: [
+      { text: "The tailoring of CBT to different populations and specific subgroups", correct: true },
+      { text: "The impact of CBT on physical health", correct: false },
+      { text: "The effectiveness of CBT in treating addiction", correct: false },
+      { text: "The cost of CBT compared to other therapies", correct: false }
+    ]
+  },
+  {
+    question: "What is one potential benefit of further research into CBT mentioned in the article?",
+    type: "single",
+    answers: [
+      { text: "More personalized treatments for various age groups and conditions", correct: true },
+      { text: "Improved relaxation techniques", correct: false },
+      { text: "Decreased popularity among therapists", correct: false },
+      { text: "The elimination of medication in treatment", correct: false }
+    ]
+  },
+  {
+    question: "Which of the following is a key feature of CBT as mentioned in the article?",
+    type: "single",
+    answers: [
+      { text: "It is short-term and goal-oriented", correct: true },
+      { text: "It focuses on long-term therapy", correct: false },
+      { text: "It requires no therapist involvement", correct: false },
+      { text: "It only addresses past experiences", correct: false }
+    ]
+  }
+];
+
+// Combine both quiz data arrays
+const combinedQuizData = quizData.concat(additionalQuizData);
+
 // DOM Elements (updated)
 const quizForm = document.getElementById('quiz-form');
 const prevBtn = document.getElementById('prev-btn');
@@ -107,7 +193,7 @@ updateProgress();
 // Render Current Question (unchanged)
 function renderQuestion() {
 quizForm.innerHTML = '';
-const question = quizData[currentQuestion];
+const question = combinedQuizData[currentQuestion];
 
 const questionDiv = document.createElement('div');
 questionDiv.className = 'question active';
@@ -139,9 +225,9 @@ quizForm.appendChild(questionDiv);
 function updateButtons() {
 prevBtn.disabled = currentQuestion === 0;
 nextBtn.disabled = false;
-submitBtn.disabled = currentQuestion !== quizData.length - 1;
+submitBtn.disabled = currentQuestion !== combinedQuizData.length - 1;
 
-if (currentQuestion === quizData.length - 1) {
+if (currentQuestion === combinedQuizData.length - 1) {
   nextBtn.style.display = 'none';
   submitBtn.style.display = 'block';
 } else {
@@ -152,7 +238,7 @@ if (currentQuestion === quizData.length - 1) {
 
 // Update Progress Bar (unchanged)
 function updateProgress() {
-const progress = ((currentQuestion + 1) / quizData.length) * 100;
+const progress = ((currentQuestion + 1) / combinedQuizData.length) * 100;
 progressBar.style.width = `${progress}%`;
 }
 
@@ -168,7 +254,7 @@ userAnswers[currentQuestion] = selected;
 // Simplified Calculate Score
 function calculateScore() {
 let score = 0;
-quizData.forEach((question, index) => {
+combinedQuizData.forEach((question, index) => {
   const userAnswer = userAnswers[index];
   if (userAnswer && userAnswer.length === 1) {
     if (question.answers[userAnswer[0]].correct) {
@@ -183,10 +269,10 @@ return score;
 function showResults() {
 const score = calculateScore();
 finalScoreDisplay.textContent = score;
-totalQuestionsFinal.textContent = quizData.length;
+totalQuestionsFinal.textContent = combinedQuizData.length;
 
 let feedbackHTML = '';
-quizData.forEach((question, index) => {
+combinedQuizData.forEach((question, index) => {
   const userAnswer = userAnswers[index] || [];
   const correctIndex = question.answers.findIndex(answer => answer.correct);
   
