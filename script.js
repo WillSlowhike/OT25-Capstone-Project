@@ -56,3 +56,17 @@ if (contactForm) {
   }
 });
 
+// Preload the images for the carousel
+const preloadImages = () => {
+  const images = document.querySelectorAll('.carousel-item img');
+  images.forEach(image => {
+    const src = image.getAttribute('data-src');
+    if (src) {
+      const img = new Image();
+      img.src = src;
+    }
+  });
+};
+
+// Call preloadImages when the page loads
+window.onload = preloadImages;
