@@ -1,15 +1,20 @@
-🌟 OT25 Capstone Project 🌟
+# Welcome to My Project!
 
-Welcome to the OT25 Capstone Project repository! This project represents the culmination of skills and knowledge acquired during the program. It’s a unique web application showcasing cutting-edge technologies, creative design, and meaningful user interactions.
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
-🚀 Project Overview
+## 🚀 **Project Overview**
+This is an exciting project that showcases my skills and passion for **web development** and **design**. The purpose of this project is to create a visually appealing and functional website, incorporating **dynamic features** and **user-centric design** principles.
 
-The OT25 Capstone Project aims to build an engaging, interactive, and user-friendly web application with a focus on accessibility, performance, and design. It offers a variety of features, including a customizable carousel, dynamic image transitions, and a responsive layout for multiple devices.
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
-📜 Features
-	•	💡 Interactive Carousel: A smooth, interactive image carousel with preloaded images for seamless transitions.
-	•	🎨 Customizable Styling: Tailor the look and feel of your web application with customizable styles.
-	•	💬 Contact Form: A simple, intuitive contact form for users to reach out.
-	•	🔍 Accessibility: Built with accessibility in mind, including focus visibility and skip navigation links for screen readers.
-	•	📱 Responsive Design: The app adapts perfectly across mobile, tablet, and desktop devices.
-⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
+### 🎨 **Features**
+- **Interactive Carousel**: Explore a smooth image carousel with seamless transitions.
+- **Personalized Design**: A custom color palette that reflects a modern and clean aesthetic.
+- **Responsive Layout**: Ensuring optimal experience across all devices – from desktops to mobile.
+
+## 🌟 **Key Technologies**
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 4**
+
+## 🎯 **Project Goals**
+1. Learn how to effectively implement **dynamic elements**.
+2. Build a **fully responsive website**.
+3. Focus on **user experience** and **interface design**.
