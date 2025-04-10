@@ -1,4 +1,4 @@
-# Welcome to My Project!
+# Welcome to My Capstone Project for 2024-2025!
 
 ## 🚀 **Project Overview**
 This is an exciting project that showcases my skills and passion for **web development** and **design**. The purpose of this project is to create a visually appealing and functional website, incorporating **dynamic features** and **user-centric design** principles.
