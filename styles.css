@@ -53,17 +53,23 @@ body {
   }
   .carousel-control-prev,
   .carousel-control-next {
-    background-color:#3498db ;
+    background-color: #3498db;
     width: 40px;
     height: 40px;
-    border-radius: 50%; /* Makes the arrows circular */
     top: 50%;
     transform: translateY(-50%);
+  }
+  .carousel-control-prev {
+    left: 110px;
+  }
+  .carousel-control-next {
+    right: 110px;
   }
   /* Optional: Change hover color */
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   background-color: #2980b9; /* Darker blue on hover */
+  filter: invert(1); /* makes arrows white if they're not visible */
 }
   
   /* About Me */
