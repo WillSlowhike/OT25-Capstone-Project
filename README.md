@@ -9,10 +9,10 @@ This is an exciting project that showcases my skills and passion for **web devel
 - **Responsive Layout**: Ensuring optimal experience across all devices – from desktops to mobile.
 
 ## 🌟 **Key Technologies**
-- **HTML5**
-- **CSS3**
+- **HTML**
+- **CSS**
 - **JavaScript**
-- **Bootstrap 4**
+- **Bootstrap**
 
 ## 🎯 **Project Goals**
 1. Learn how to effectively implement **dynamic elements**.
