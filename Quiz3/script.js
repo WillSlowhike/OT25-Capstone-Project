@@ -1,13 +1,83 @@
 // Quiz Data
 const quizData = [
   {
-    question: "Example Question",
+    question: "What is one of the key effects of excessive screen time on adolescents' language skills?",
     type: "single",
     answers: [
-      { text: "Example Answer", correct: false },
-      { text: "Example Answer", correct: true },
-      { text: "Example Answer", correct: false },
-      { text: "Example Answer", correct: false }
+      { text: "Improved vocabulary", correct: false },
+      { text: "Reduced time for reading", correct: true },
+      { text: "Increased reading time", correct: false },
+      { text: "Improved memory retention", correct: false }
+    ]
+  },
+  {
+    question: "How does screen time affect adolescents' social behavior?",
+    type: "single",
+    answers: [
+      { text: "Increases their ability to communicate effectively", correct: false },
+      { text: "Leads to social isolation and poor communication skills", correct: true },
+      { text: "Enhances their social relationships", correct: false },
+      { text: "Encourages more face-to-face interactions", correct: false }
+    ]
+  },
+  {
+    question: "Which brain area is affected by violent video games, leading to reduced activation?",
+    type: "single",
+    answers: [
+      { text: "Frontal brain regions", correct: true },
+      { text: "Temporal lobes", correct: false },
+      { text: "Hippocampus", correct: false },
+      { text: "Occipital lobe", correct: false }
+    ]
+  },
+  {
+    question: "What is one of the mental health challenges linked to prolonged screen use in adolescents?",
+    type: "single",
+    answers: [
+      { text: "Increased cognitive flexibility", correct: false },
+      { text: "Decreased anxiety levels", correct: false },
+      { text: "Increased depression and anxiety", correct: true },
+      { text: "Improved sleep quality", correct: false }
+    ]
+  },
+  {
+    question: "What effect does excessive screen time have on brain volume in adolescents?",
+    type: "single",
+    answers: [
+      { text: "Increases brain volume", correct: false },
+      { text: "Has no effect on brain volume", correct: false },
+      { text: "Reduces brain volume", correct: true },
+      { text: "Increases gray matter volume", correct: false }
+    ]
+  },
+  {
+    question: "What is one way to balance screen time and promote healthier cognitive development in adolescents?",
+    type: "single",
+    answers: [
+      { text: "Allow unlimited screen time to improve brain activity", correct: false },
+      { text: "Encourage more outdoor and physical activities", correct: true },
+      { text: "Decrease sleep time for more screen time", correct: false },
+      { text: "Limit all screen time entirely", correct: false }
+    ]
+  },
+  {
+    question: "Which therapy has become the go-to treatment for improving day-to-day life and is recommended for adolescents with mental health issues?",
+    type: "single",
+    answers: [
+      { text: "Psychoanalysis", correct: false },
+      { text: "Cognitive Behavioral Therapy (CBT)", correct: true },
+      { text: "Hypnotherapy", correct: false },
+      { text: "Group therapy", correct: false }
+    ]
+  },
+  {
+    question: "What is one of the behavioral issues linked to excessive gaming?",
+    type: "single",
+    answers: [
+      { text: "Increased emotional regulation", correct: false },
+      { text: "Higher levels of aggression and attention problems", correct: true },
+      { text: "Improved time management", correct: false },
+      { text: "Enhanced impulse control", correct: false }
     ]
   }
 ];
