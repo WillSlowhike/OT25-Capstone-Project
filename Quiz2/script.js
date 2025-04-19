@@ -287,6 +287,18 @@ combinedQuizData.forEach((question, index) => {
 });
 
 answerFeedback.innerHTML = feedbackHTML;
+const motivationalMessage = document.getElementById('motivational-message');
+const percentage = (score / combinedQuizData.length) * 100;
+
+if (percentage === 100) {
+  motivationalMessage.textContent = "Perfect score! You're a quiz master! 🏆";
+} else if (percentage >= 80) {
+  motivationalMessage.textContent = "Great job! You really know your stuff! 💪";
+} else if (percentage >= 50) {
+  motivationalMessage.textContent = "Nice effort! A little more practice and you’ll ace it! 😊";
+} else {
+  motivationalMessage.textContent = "Keep going! Mistakes are just stepping stones to success! 🌱";
+}
 resultsModal.show();
 }
 
@@ -300,11 +312,16 @@ updateProgress();
 });
 
 nextBtn.addEventListener('click', () => {
-saveAnswer();
-currentQuestion++;
-renderQuestion();
-updateButtons();
-updateProgress();
+  saveAnswer();
+  currentQuestion++;
+  const halfwayIndex = Math.floor(combinedQuizData.length / 2);
+  if (currentQuestion === halfwayIndex) {
+    const halfwayModal = new bootstrap.Modal(document.getElementById('halfway-modal'));
+    halfwayModal.show();
+  }
+  renderQuestion();
+  updateButtons();
+  updateProgress();
 });
 
 submitBtn.addEventListener('click', (e) => {
