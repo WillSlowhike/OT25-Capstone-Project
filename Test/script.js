@@ -26,18 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-  
-    // Enhanced form validation
-    const contactForm = document.querySelector(".contact-form form");
-    if (contactForm) {
-      contactForm.addEventListener("submit", function (event) {
-        const email = contactForm.querySelector("#email").value.trim();
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          alert("Please enter a valid email address.");
-          event.preventDefault();
-        }
-      });
-    }
     
     // Lazy loading for images
     const lazyImages = document.querySelectorAll('img[data-src]');

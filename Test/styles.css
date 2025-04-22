@@ -1,3 +1,44 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;}
+    
+    /* Improve focus visibility */
+    .nav-link:focus, .btn:focus, .form-control:focus {
+      outline: 2px solid #3498db;
+      outline-offset: 2px;
+    }
+    
+    /* Add skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #2c3e50;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    
+    /* Navbar */
+    .navbar-custom {
+      background-color: #2c3e50;
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #ecf0f1;
+    }
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link:focus {
+      color: #3498db;
+    }
+    .navbar-custom .search-bar {
+      max-width: 300px;
+    }
 /* Card Styles */
 .card {
     position: relative;
@@ -123,5 +164,72 @@
       .hover-zoom:hover {
         transform: scale(1.05);
       }
+
+        /* Grid Items */
+  .grid-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  .grid-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Back to Top Button */
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Article Image Styling */
+  .article-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .article-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .article-image-container {
+      padding: 5px;
+    }
+  }
+.article-image-container img {
+    max-width: 80%; /* Adjust the percentage to your desired size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 /* Keep your existing styles for other elements below */
 /* ... rest of your existing CSS ... */
