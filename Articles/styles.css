@@ -1,0 +1,180 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;}
+    
+    /* Improve focus visibility */
+    .nav-link:focus, .btn:focus, .form-control:focus {
+      outline: 2px solid #3498db;
+      outline-offset: 2px;
+    }
+    
+    /* Add skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #2c3e50;
+      color: white;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    
+    /* Custom Navbar Styling */
+    .navbar-custom {
+        background-color: #2c3e50; /* Dark blue */
+      }
+      .navbar-custom .navbar-brand,
+      .navbar-custom .nav-link {
+        color: #ecf0f1; /* Light gray */
+      }
+      .navbar-custom .nav-link:hover {
+        color: #3498db; /* Light blue on hover */
+      }
+      .navbar-custom .search-bar {
+        max-width: 300px; /* Limit search bar width */
+      }
+  
+  /* Footer */
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Back to Top Button */
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Article Image Styling */
+  .article-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .article-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .article-image-container {
+      padding: 5px;
+    }
+  }
+.article-image-container img {
+    max-width: 80%; /* Adjust the percentage to your desired size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Hover effect on cards */
+.photo-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 30px;
+}
+
+.card {
+  position: relative;
+  width: 280px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card-text .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-text span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.card-text-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4af37;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  text-align: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.card-text-hover .title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-text-hover .desc {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.card:hover .card-text-hover {
+  opacity: 1;
+}
+
+.card:hover img {
+  opacity: 0.3;
+}
