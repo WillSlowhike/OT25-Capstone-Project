@@ -6,26 +6,14 @@
   <title>DigitalBalanceHub - Article 1</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../styles.css">
-  <style>
-    /* Custom Navbar Styling */
-    .navbar-custom {
-      background-color: #2c3e50; /* Dark blue */
-    }
-    .navbar-custom .navbar-brand,
-    .navbar-custom .nav-link {
-      color: #ecf0f1; /* Light gray */
-    }
-    .navbar-custom .nav-link:hover {
-      color: #3498db; /* Light blue on hover */
-    }
-    .navbar-custom .search-bar {
-      max-width: 300px; /* Limit search bar width */
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="scroll-progress"></div>
+  
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
@@ -50,7 +38,6 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
-            <!-- Add .dropdown-menu-end to align the dropdown to the right -->
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="../../index.html">Home</a></li>  
               <li><a class="dropdown-item" href="../../aboutme.html">About</a></li>
@@ -71,55 +58,45 @@
         <h1>Are Video Games Good for You and Your Brain?</h1>
         <p class="text-muted">Published on <time datetime="2025-03-24">March 24, 2025</time></p>
 
-          <!-- Image container -->
-  <div class="article-image-container mt-3 mb-4">
-    <img src="EdTech_Q123_PS_ReportCard_Hero.jpeg" 
-        alt="Video game effects on brain development" 
-        class="img-fluid rounded mx-auto d-block">
-    <p class="text-muted text-center mt-2"><small>Image credit: @edtechmagazine.com</small></p>
-  </div>
+        <div class="article-image-container mt-3 mb-4">
+          <a href="https://edtechmagazine.com/k12/article/2022/12/national-study-finds-video-games-could-improve-cognitive-function-kids" target="_blank">
+            <img src="Images/EdTech_Q123_PS_ReportCard_Hero.jpeg" 
+                alt="Video game effects on brain development" 
+                class="img-fluid rounded mx-auto d-block hover-zoom">          </a>
+          <p class="text-muted text-center mt-2"><small>Image credit: @edtechmagazine.com</small></p>
+        </div>
       </header>
       
       <div class="article-body">
-        <p class="lead">Video games have become an integral part of modern entertainment, particularly for teens. While there are benefits, such as improved cognitive skills and social connections in some contexts, the negative effects on mental health cannot be ignored. Excessive gaming can lead to a range of issues that affect both the brain and overall well-being.
-        </p>
+        <p class="lead">Video games have become an integral part of modern entertainment, particularly for teens. While there are benefits, such as improved cognitive skills and social connections in some contexts, the negative effects on mental health cannot be ignored.</p>
         
-        
-        <h2>1. Addiction and Mental Health Struggles</h2>
-        <p>One of the most significant concerns with video games is the potential for addiction. Teens who spend excessive hours gaming may experience withdrawal from reality, leading to neglect of responsibilities like schoolwork and relationships. As the article notes, "excessive gaming can lead to negative outcomes like increased stress and decreased social interactions." Gaming addiction can also contribute to heightened stress, anxiety, and depression as teens withdraw further from social interactions and real-world obligations.
-        </p>
-                
-        <h2>2. Impacts on Academic Performance</h2>
-        <p>Video games can significantly affect academic performance. Teens who invest long hours in gaming may find it difficult to focus on their studies. Sleep deprivation, a common result of late-night gaming, further exacerbates cognitive performance, making it harder for students to retain information and perform well in school. The article states, "The constant focus on gaming can interfere with academics, leading to lower grades and decreased motivation."
-        </p> 
-
-        <h2>3. Social Isolation and Poor Communication Skills </h2>
-        <p>Although online multiplayer games can offer social connections, they often replace face-to-face interactions. This shift can lead to a decline in social skills and emotional intelligence. Teens who immerse themselves in virtual worlds may find it increasingly difficult to navigate real-world social situations, leading to feelings of loneliness and isolation. The article highlights, "Teenagers who spend significant time gaming may find it challenging to engage in meaningful social interactions outside of the gaming environment."
-        </p>
-
-        <h2>4. Exposure to Violence and Aggressive Behavior</h2>
-        <p>A growing concern is the exposure to violent content in video games. Studies have shown that teens who regularly play violent video games may become desensitized to aggression and exhibit more hostile behaviors in real life. As the article mentions, "Excessive exposure to violent video games may lead to an increase in aggressive behavior and desensitization to real-life violence." This exposure can alter a teen's perception of conflict resolution, leading to an increased likelihood of aggression in real-world situations.
-        </p>
-
-        <h2>5. Physical Health Concerns</h2>
-        <p>Extended gaming sessions are often sedentary, which can contribute to physical health issues such as obesity, poor posture, and eye strain. The lack of physical activity can also lead to a decline in overall health and fitness, affecting mental clarity and emotional stability. The article notes, "Sitting for long periods of time while gaming can lead to a decline in physical health, including poor posture, eye strain, and weight gain."        </p>
+        <div class="photo-cont">
+          <!-- Cards will be inserted here by JavaScript -->
+        </div>
         
         <h2>Conclusion</h2>
-        <p>While video games can offer certain cognitive and social benefits, it is essential to be aware of their potential negative effects on mental health. By understanding these risks and taking steps to limit excessive gaming, teens can enjoy video games in a healthy, balanced way that does not compromise their brain health or well-being.
-        </p>
+        <p>While video games can offer certain cognitive and social benefits, it is essential to be aware of their potential negative effects on mental health.</p>
       </div>
     </article>
   </main>
 
-  <footer>
+  <footer class="footer-custom">
     <p>&copy; <span id="footer-year"></span> OT25-Capstone-Project. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://x.com/WillTehGamer_" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/WillSlowhike" class="text-light me-3"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/will-slowhike/" class="text-light"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@will_slowhike" class="text-light"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.twitch.tv/will_slowhike" class="text-light"><i class="fab fa-twitch"></i></a>
+      <a href="https://www.instagram.com/will_slowhike/" class="text-light"><i class="fab fa-instagram"></i></a>
+    </div>
   </footer>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <!-- Custom JS -->
-  <script src="../script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 
