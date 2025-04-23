@@ -142,10 +142,37 @@ body {
   }
   
   /* Footer */
-  footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    margin-top: 40px;
+  .footer-custom {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 60px;
+    font-size: 0.95rem;
+    border-top: 2px solid #444;
+  }
+
+  .footer-custom p {
+    margin: 0;
+  }
+
+  .footer-custom span {
+    color: #f1c40f;
+  }
+
+  .footer-custom .social-icons {
+    margin-top: 10px;
+  }
+
+  .footer-custom .social-icons a {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+
+  .footer-custom .social-icons a:hover {
+    color: #f1c40f;
   }
   
   /* Back to Top Button */
