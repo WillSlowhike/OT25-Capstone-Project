@@ -107,10 +107,10 @@ document.addEventListener("DOMContentLoaded", function() {
               <span>MORE</span>
             </div>
             <div class="card-text-hover">
-              <div>
+              <div class="card-text-hover-inner">
                 <p class="title">${card.title}</p>
                 <hr>
-                <p class="desc">${card.desc}</p>
+                <div class="scroll-desc">${card.desc}</div>
               </div>
             </div>
           </div>
@@ -136,3 +136,10 @@ const preloadImages = () => {
 window.onload = preloadImages;
 // Example of using template literals
 let backtick_string = `This string contains "double quotes" and 'single quotes'.`;
+
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+  document.getElementById('scroll-progress').style.width = scrollPercent + '%';
+});
