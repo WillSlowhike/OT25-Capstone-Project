@@ -6,24 +6,10 @@
   <title>DigitalBalanceHub - Article 3</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../styles.css">
-  <style>
-    /* Custom Navbar Styling */
-    .navbar-custom {
-      background-color: #2c3e50; /* Dark blue */
-    }
-    .navbar-custom .navbar-brand,
-    .navbar-custom .nav-link {
-      color: #ecf0f1; /* Light gray */
-    }
-    .navbar-custom .nav-link:hover {
-      color: #3498db; /* Light blue on hover */
-    }
-    .navbar-custom .search-bar {
-      max-width: 300px; /* Limit search bar width */
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -72,59 +58,47 @@
             <p class="text-muted">Published on <time datetime="2025-04-17">April 17, 2025</time></p>
     
               <!-- Image container -->
-      <div class="article-image-container mt-3 mb-4">
-        <img src="risks-of-excessive-screen-time-graphic.jpg" 
-            alt="The impact of screen time on adolescent brain development" 
-            class="img-fluid rounded mx-auto d-block">
-        <p class="text-muted text-center mt-2"><small>Image credit: Schreiber Center for Pediatric Development
-        </small></p>
-      </div>
+          <header>
+            <div class="article-image-container mt-3 mb-">
+              <a href="https://www.schreiberpediatric.org/2024/06/technology-and-your-childs-developing-brain/" target="_blank">
+                <img src="risks-of-excessive-screen-time-graphic.jpg" 
+                  alt="The impact of screen time on adolescent brain development" 
+                  class="img-fluid rounded mx-auto d-block hover-zoom"></a>
+              <p class="text-muted text-center mt-2"><small>Image credit: @ The Schreiber Center for Pediatric Development</small></p>
+            </div>
           </header>
           
+
           <div class="article-body">
-            <p class="lead">
-            Recent research has revealed the surprising consequences of excessive screen time on adolescent brain development. While screens are an essential part of modern life, their effect on mental health and cognitive functions cannot be ignored.
-            </p>
+            <p class="lead">Recent research has revealed the surprising consequences of excessive screen time on adolescent brain development. While screens are an essential part of modern life, their effect on mental health and cognitive functions cannot be ignored.</p>
             
-            <h2>1. Language Skills</h2>
-            <p>
-            Research has shown that excessive screen time can reduce reading time, which in turn negatively affects language skills. As screen time increases, time for activities like reading decreases, impacting the development of vocabulary and comprehension.
-            </p>
-                    
-            <h2>2. Behavioral Issues</h2>
-            <p>
-            Teens who spend more time on screens often exhibit higher levels of aggression and attention problems. The lack of real-world interaction leads to difficulties in social situations and an increase in behaviors such as irritability and impulsivity.
-            </p> 
-    
-            <h2>3. Brain Volume</h2>
-            <p>
-            Studies suggest that excessive screen time may even reduce brain volume, which can hinder development in areas responsible for critical cognitive functions such as memory, attention, and learning.
-            </p>
-    
-            <h2>4. Mental Health Risks</h2>
-            <p>
-            Prolonged screen use is linked to mental health challenges, including increased depression and anxiety. The overuse of screens often displaces other activities like physical exercise or sleep, both of which are essential for mental well-being.
-            </p>
-    
-            <h2>5. Social Impact</h2>
-            <p>
-            Spending too much time on screens can lead to social isolation, as teens may neglect face-to-face interactions. This lack of social skills development can result in difficulties in forming meaningful relationships and understanding social cues.
-            </p>
-            <h2>Conclusion:</h2>
-            <p>
-            The research highlights the importance of managing screen time to promote healthy brain development in adolescents. While screens are an integral part of life, balancing screen use with other activities like reading, physical exercise, and socializing is crucial for maintaining cognitive health.
-            </p>
+            <div class="photo-cont">
+              <!-- Cards will be inserted here by JavaScript -->
+            </div>
+            
+            <h2>Conclusion</h2>
+            <p>While video games can offer certain cognitive and social benefits, it is essential to be aware of their potential negative effects on mental health.</p>
           </div>
         </article>
       </main>
 
-      <footer>
+    
+      <footer class="footer-custom">
         <p>&copy; <span id="footer-year"></span> OT25-Capstone-Project. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://x.com/WillTehGamer_" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/WillSlowhike" class="text-light me-3"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/will-slowhike/" class="text-light"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/@will_slowhike" class="text-light"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.twitch.tv/will_slowhike" class="text-light"><i class="fab fa-twitch"></i></a>
+          <a href="https://www.instagram.com/will_slowhike/" class="text-light"><i class="fab fa-instagram"></i></a>
+        </div>
       </footer>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../script.js"></script>
+    
+      <!-- Bootstrap JS and dependencies -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+      <!-- Custom JS -->
+      <script src="script.js"></script>
     </body>
     </html>
