@@ -46,35 +46,30 @@ document.addEventListener("DOMContentLoaded", function() {
     // Generate cards dynamically
     const cardsData = [
       {
-        image: "Images/video-games-mental-health.png",
-        alt: "Gaming addiction illustration",
+        image: "The-Communication-Skills-Affected-by-Online-Video-Games.png",
+        alt: "Communication skills affected by online video games",
         title: "Language Skills",
-        desc: `One of the most significant concerns with video games is the potential for addiction. Teens who spend excessive hours gaming may experience withdrawal from reality, leading to neglect of responsibilities like schoolwork and relationships. "Excessive gaming can lead to negative outcomes like increased stress and decreased social interactions." Gaming addiction can also contribute to heightened stress, anxiety, and depression as teens withdraw further from social interactions and real-world obligations.`
-      },
+        desc: `Research has shown that excessive screen time can reduce reading time, which in turn negatively affects language skills. As screen time increases, time for activities like reading decreases, impacting the development of vocabulary and comprehension. In younger users, this can delay language acquisition and reduce the richness of verbal expression. "Spending less time on books and conversations in favor of screens can hinder the growth of strong communication skills."`      },
       {
-        image: "Images/teen-boy-playing-video-game.jpg",
+        image: "game-addict-laying-on-the-floor.webp",
         alt: "Academic struggles due to gaming",
         title: "Behavioral Issues",
-        desc: `Video games can significantly affect academic performance. Teens who invest long hours in gaming may find it difficult to focus on their studies. Sleep deprivation, a common result of late-night gaming, further exacerbates cognitive performance, making it harder for students to retain information and perform well in school. "The constant focus on gaming can interfere with academics, leading to lower grades and decreased motivation."`
-      },
+        desc: `Teens who spend excessive time on screens are more likely to display behavioral challenges, including impulsivity, irritability, and attention problems. This can be attributed to overstimulation and a lack of real-world interaction, which are crucial for developing emotional intelligence and social behavior. "Extended screen exposure can make it harder for teens to regulate their emotions and behavior in real-life situations."`      },
       {
-        image: "Images/Podcast2.webp",
-        alt: "Teen isolated with headphones",
+        image: "id5821306-3-2-0306.jpg",
+        alt: "Brain Effect Infographic",
         title: "Brain Volume",
-        desc: `Although online multiplayer games can offer social connections, they often replace face-to-face interactions. This shift can lead to a decline in social skills and emotional intelligence. Teens who immerse themselves in virtual worlds may find it increasingly difficult to navigate real-world social situations, leading to feelings of loneliness and isolation. "Teenagers who spend significant time gaming may find it challenging to engage in meaningful social interactions outside of the gaming environment."`
-      },
+        desc: `Studies suggest that excessive screen time may reduce brain volume, particularly in areas responsible for memory, learning, and attention. These structural changes can interfere with critical thinking and emotional regulation, especially during adolescence when the brain is still developing. "Excessive exposure to screens during formative years can hinder healthy brain growth and impact cognitive abilities long-term."`      },
       {
-        image: "Images/vidgameviolence-1.jpg",
+        image: "63c13731bb7865.98261060.jpg",
         alt: "Video game aggression",
         title: "Mental Health Risks",
-        desc: `A growing concern is the exposure to violent content in video games. Studies have shown that teens who regularly play violent video games may become desensitized to aggression and exhibit more hostile behaviors in real life. "Excessive exposure to violent video games may lead to an increase in aggressive behavior and desensitization to real-life violence." This exposure can alter a teen's perception of conflict resolution, leading to an increased likelihood of aggression in real-world situations.`
-      },
+        desc: `Prolonged screen use is linked to mental health challenges, including increased depression and anxiety. The overuse of screens often displaces other activities like physical exercise or sleep, both of which are essential for mental well-being. It can also isolate individuals from support systems, making it harder to cope with stress and emotional difficulties. "Excessive screen time can significantly affect mood, self-esteem, and stress levels, particularly in teens navigating emotional development."`      },
       {
-        image: "Images/bad-posture-kids.jpg",
+        image: "social-effects-of-gaming.jpg",
         alt: "Teen playing games with bad posture",
         title: "Social Impact",
-        desc: `Extended gaming sessions are often sedentary, which can contribute to physical health issues such as obesity, poor posture, and eye strain. The lack of physical activity can also lead to a decline in overall health and fitness, affecting mental clarity and emotional stability. "Sitting for long periods of time while gaming can lead to a decline in physical health, including poor posture, eye strain, and weight gain."`
-      }
+        desc: `Excessive screen time can reduce opportunities for in-person interactions, leading to feelings of loneliness and difficulties in forming relationships. Over time, this may result in a lack of social confidence and difficulty understanding nonverbal cues or emotional expressions. "Teens who spend less time socially engaging in person may struggle to connect with peers or navigate social dynamics effectively."`      },
     ];
     
     const container = document.querySelector('.photo-cont');
