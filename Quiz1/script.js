@@ -241,3 +241,11 @@ submitBtn.addEventListener('click', (e) => {
 
 // Initialize
 initQuiz();
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('start-btn').addEventListener('click', function () {
+    document.getElementById('start-screen').classList.add('d-none');
+    document.querySelector('.quiz-main').classList.remove('d-none');
+    document.querySelector('.quiz-footer').classList.remove('d-none');
+  });
+});

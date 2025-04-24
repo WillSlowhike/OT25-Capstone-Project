@@ -10,19 +10,26 @@
 <body>
   <div class="quiz-container">
   <header class="quiz-header">
-  <h1>Knowledge Check #1</h1>
+  <img src="Articles/Article_1/thumb.jpg" alt="Thumbnail" class="img-fluid rounded mb-2">
   <div class="progress">
-   <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+  <div class="progress-bar" role="progressbar" style="width: 0%"></div>
   </div>
+  
 </header>
 
-    <main class="quiz-main">
+<section id="start-screen" class="text-center p-5">
+  <h2>Welcome to Knowledge Check #1</h2>
+  <p>This quiz will test your understanding of the topic. Click below when you're ready to begin.</p>
+  <button id="start-btn" class="btn btn-success btn-lg mt-3">Start Quiz</button>
+</section>
+
+    <main class="quiz-main d-none">
       <form id="quiz-form">
         <!-- Questions will be inserted here by JavaScript -->
       </form>
     </main>
 
-    <footer class="quiz-footer">
+    <footer class="quiz-footer d-none">
       <button id="prev-btn" class="btn btn-secondary" disabled>Previous</button>
       <button id="next-btn" class="btn btn-primary">Next</button>
       <button id="submit-btn" class="btn btn-success" disabled>Submit Quiz</button>
@@ -70,3 +77,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
