@@ -340,3 +340,15 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.quiz-footer').classList.remove('d-none');
   });
 });
+
+document.getElementById('next-btn').addEventListener('click', function () {
+  const currentQuestion = document.querySelector(`input[name="q${currentQuestionIndex}"]:checked`);
+  if (!currentQuestion) {
+    alert('Please select an answer before moving on!');
+    return; // Stop the function if no answer
+  }
+  
+  // Your existing code to move to the next question
+  currentQuestionIndex++;
+  showQuestion(currentQuestionIndex);
+});
